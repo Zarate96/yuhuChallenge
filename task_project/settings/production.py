@@ -7,7 +7,15 @@ env.read_env()
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['http://test.hzcode.mx/','test.hzcode.mx','74.208.123.242']
+
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:5173",  
+    "http://test.fronted.hzcode.mx",
+    "http://test.fronted.hzcode.mx/",
+]
+
+CORS_ALLOW_CREDENTIALS = True
 
 DATABASES = {
     'default': {
